@@ -17,6 +17,7 @@ class ViewController: UIViewController  {
         weekley 데이터
         로그인 UI
         이메일 입력 비밀번호 입력 이미지 수정
+        스크롤 관련해서 물어보기
      */
     var weekDay = DateManager.shared.getWeekDateInfo()
     private lazy var v = MainView()
@@ -39,7 +40,7 @@ class ViewController: UIViewController  {
         v.tableView.register(TableViewCel.self, forCellReuseIdentifier: TableViewCel.registerId)
         getData()
     }
-
+    //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
     func setInput() -> MyViewModel {
         let inputs = MyViewModel.Inputs(pageLoad: self.rx.viewWillAppear.map { _ in
             print("page load_MainHome")
