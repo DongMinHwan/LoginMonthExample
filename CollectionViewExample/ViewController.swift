@@ -13,7 +13,11 @@ import RxViewController
 
 class ViewController: UIViewController  {
 
-    
+    /**
+        weekley 데이터
+        로그인 UI
+        이메일 입력 비밀번호 입력 이미지 수정
+     */
     var weekDay = DateManager.shared.getWeekDateInfo()
     private lazy var v = MainView()
     var vm : MyViewModel!
