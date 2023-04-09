@@ -69,8 +69,6 @@ class LoginView : UIView {
     }
     
     func setlayout() {
-      
-        
         main.snp.makeConstraints { make in
             make.top.equalTo(safeAreaLayoutGuide.snp.top)
             make.left.right.equalToSuperview()
